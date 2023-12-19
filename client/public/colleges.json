@@ -1,0 +1,70 @@
+[
+  {
+    "name": "Zeta University",
+    "research": "Economics",
+    "image": "https://poetsandquantsforundergrads.com/wp-content/uploads/sites/3/2023/09/Princeton-University-1024x683.jpg",
+    "dates": "Jul 3, 2024",
+    "events": [
+      "Economic Summit",
+      "Photography Contest",
+      "Dance Marathon",
+      "Career Workshop"
+    ],
+    "sports": ["Basketball", "Volleyball", "Boxing", "Gymnastics"]
+  },
+  {
+    "name": "Alpha University",
+    "research": "Computer Science",
+    "image": "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvbGxlZ2V8ZW58MHx8MHx8fDA%3D",
+    "dates": "Feb 15, 2024",
+    "events": ["TechFest", "Hackathon", "Cultural Night", "Science Expo"],
+    "sports": ["Table Tennis", "Volleyball", "Swimming", "Chess"]
+  },
+  {
+    "name": "Beta College",
+    "research": "Chemistry",
+    "image": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fGNvbGxlZ2V8ZW58MHx8MHx8fDA%3D",
+    "dates": "Mar 5, 2024",
+    "events": [
+      "Science Fair",
+      "Dance Competition",
+      "Food Festival",
+      "Quiz Bowl"
+    ],
+    "sports": ["Football", "Basketball", "Track and Field", "Karate"]
+  },
+  {
+    "name": "Gamma Institute",
+    "research": "Physics",
+    "image": "https://images.unsplash.com/photo-1504817343863-5092a923803e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fGNvbGxlZ2V8ZW58MHx8MHx8fDA%3D",
+    "dates": "Apr 20, 2024",
+    "events": [
+      "Physics Symposium",
+      "Music Fest",
+      "Literary Night",
+      "Fitness Challenge"
+    ],
+    "sports": ["Golf", "Hockey", "Cycling", "Yoga"]
+  },
+  {
+    "name": "Delta School",
+    "research": "Mathematics",
+    "image": "https://images.unsplash.com/20/cambridge.JPG?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzZ8fGNvbGxlZ2V8ZW58MHx8MHx8fDA%3D",
+    "dates": "May 12, 2024",
+    "events": [
+      "Math Olympics",
+      "Drama Club Performance",
+      "Art Exhibition",
+      "Career Fair"
+    ],
+    "sports": ["Baseball", "Soccer", "Wrestling", "Archery"]
+  },
+  {
+    "name": "Epsilon Academy",
+    "research": "Environmental Science",
+    "image": "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI4fHxjb2xsZWdlfGVufDB8fDB8fHww",
+    "dates": "Jun 8, 2024",
+    "events": ["Green Expo", "Movie Night", "Tech Symposium", "Fashion Show"],
+    "sports": ["Swimming", "Badminton", "Cricket", "Tennis"]
+  }
+]
