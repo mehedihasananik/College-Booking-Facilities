@@ -6,6 +6,7 @@ import SignUp from "../page/SignUp/SignUp";
 import RoomDetails from "../page/RoomDetails/RoomDetails";
 import CollegeDetails from "../components/Colleges/CollegeDetails";
 import ErrorPage from "../page/ErrorPage/ErrorPage";
+import MyColleges from "../page/MyColleges/MyColleges";
 
 export const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ export const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/roomDetails/:id", element: <RoomDetails /> },
       { path: "/college/:id", element: <CollegeDetails /> },
+      {
+        path: "/colleges",
+        element: <MyColleges />,
+      },
       {
         path: "/login",
         element: <Login />,
