@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+}
+@layer components {
+  /* In your custom styles or Tailwind CSS configuration */
+  .gradient-container {
+    background: linear-gradient(
+      to right,
+      #e5de70,
+      #f00123,
+      #e5de70,
+      #083db3,
+      #0000
+    );
+    /* Other styles as needed */
+    height: 100%; /* Ensure the span covers the entire height of the parent */
+    width: 100%; /* Ensure the span covers the entire width of the parent */
+    display: block; /* Ensure the span is displayed as a block element */
+  }
+}

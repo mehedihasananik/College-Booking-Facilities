@@ -1,0 +1,45 @@
+[
+  {
+    "location": "Sidemen, Bali",
+    "image": "https://images.pexels.com/photos/1205651/pexels-photo-1205651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "dateRange": "Jan 9, 2024 - Jan 14, 2024",
+    "price": 456,
+    "category": "Beach"
+  },
+  {
+    "location": "Abiansemal, Bali",
+    "image": "https://images.pexels.com/photos/901964/pexels-photo-901964.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "dateRange": "Jan 9, 2024 - Jan 14, 2024",
+    "price": 513,
+    "category": "Windmills"
+  },
+  {
+    "location": "Kecamatan Ubud, Bali",
+    "image": "https://images.pexels.com/photos/1152500/pexels-photo-1152500.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "dateRange": "Jan 9, 2024 - Jan 14, 2024",
+    "price": 456,
+    "category": "Modern"
+  },
+  {
+    "location": "Koh samui, Thailand",
+    "image": "https://images.pexels.com/photos/7944238/pexels-photo-7944238.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "dateRange": "Jan 9, 2024 - Jan 14, 2024",
+    "price": 513,
+    "category": "Countryside"
+  },
+
+  {
+    "location": "Surat Thani, Thailand",
+    "image": "https://images.pexels.com/photos/8093042/pexels-photo-8093042.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "dateRange": "Jan 9, 2024 - Jan 14, 2024",
+    "price": 456,
+    "category": "Windmills"
+  },
+  {
+    "location": "Khao Lak, Thailand",
+    "image": "https://images.pexels.com/photos/7944035/pexels-photo-7944035.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "dateRange": "Jan 9, 2024 - Jan 14, 2024",
+    "price": 345,
+    "category": "Windmills"
+  }
+]
