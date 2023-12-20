@@ -13,10 +13,29 @@ const MyCollege = () => {
 
   return (
     <Container>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-10">
-        {myColleges.map((college) => {
-          return <MyClgCard key={college._id} college={college} />;
-        })}
+      <div className="overflow-x-auto">
+        <table className="table">
+          {/* head */}
+          <thead>
+            <tr>
+              <th></th>
+              <th>College Name</th>
+              <th>Subject</th>
+              <th>Date</th>
+              <th>Email</th>
+              <th>Address</th>
+              <th>Phone Number</th>
+            </tr>
+          </thead>
+          <tbody>
+            {/* row 1 */}
+            {myColleges.map((college, index) => {
+              return (
+                <MyClgCard key={college._id} college={college} index={index} />
+              );
+            })}
+          </tbody>
+        </table>
       </div>
     </Container>
   );

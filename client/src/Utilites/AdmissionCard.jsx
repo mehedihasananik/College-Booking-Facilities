@@ -39,7 +39,6 @@ const AdmissionCard = ({ item }) => {
         } else {
           toast.error("You already have an appoinment");
         }
-        refetch();
       });
 
     modalRef.current.close();
