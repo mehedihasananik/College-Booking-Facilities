@@ -31,6 +31,7 @@ async function run() {
     const allColleges = client.db('college').collection('all-colleges')
     const admissionColleges = client.db('college').collection('admissionColleges')
     const admissionBooking = client.db('college').collection('admissionBooking')
+    const reviews = client.db('college').collection('reviews')
 
 
     //  to get all the colleges
@@ -77,6 +78,14 @@ async function run() {
       res.send({ success: true, result });
     });
 
+    // get admisson clg details by id
+    app.get("/admission/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: new ObjectId(id) };
+      const user = await admissionBooking.findOne(query);
+      res.send(user);
+    });
+
     // to save users email on database
 
     app.put("/users/:email", async (req, res) => {
@@ -91,6 +100,19 @@ async function run() {
       console.log(result)
       res.send(result)
     })
+
+    // review
+    app.post("/review", async (req, res) => {
+      const data = req.body;
+      const query = { data };
+      console.log(query)
+      const exits = await reviews.findOne(query);
+      if (exits) {
+        return res.send({ success: false, data: exits })
+      }
+      const result = await reviews.insertOne(data);
+      res.send({ success: true, result });
+    });
 
 
 

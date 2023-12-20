@@ -25,6 +25,8 @@ const MyCollege = () => {
               <th>Email</th>
               <th>Address</th>
               <th>Phone Number</th>
+              <th>Details</th>
+              <th>Add A review</th>
             </tr>
           </thead>
           <tbody>

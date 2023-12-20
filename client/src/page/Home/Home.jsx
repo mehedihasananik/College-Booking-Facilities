@@ -4,6 +4,7 @@ import Colleges from "../../components/Colleges/Colleges";
 import Gallery from "../../components/Gallery/Gallery";
 import Research from "../../components/Research/Research";
 import CollegeSearch from "../../components/CollegeSearch/CollegeSearch";
+import AllCollegeReviews from "../../components/AllCollegeReviews/AllCollegeReviews";
 
 const Home = () => {
   const [colleges, setColleges] = useState([]);
@@ -31,6 +32,7 @@ const Home = () => {
       <Colleges filteredColleges={filteredColleges} />
       <Gallery />
       <Research />
+      <AllCollegeReviews />
     </div>
   );
 };
