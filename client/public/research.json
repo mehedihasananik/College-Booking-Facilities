@@ -1,0 +1,137 @@
+[
+  {
+    "title": "Understanding the Impact of Artificial Intelligence on Society",
+    "link": "https://researcherslinks.com/journal/Biologia-Pakistan/37",
+    "authors": [
+      {
+        "name": "John A. Researcher",
+        "affiliation": "Department of Computer Science, University XYZ"
+      },
+      {
+        "name": "Jane B. Scholar",
+        "affiliation": "Institute of Technology, ABC University"
+      }
+    ],
+    "publicationDate": "2023-01-15",
+    "conference": {
+      "name": "International Conference on AI and Society",
+      "location": "City, Country",
+      "date": "2023-05-10"
+    },
+    "keywords": ["artificial intelligence", "society", "impact", "technology"]
+  },
+  {
+    "title": "Ethical Considerations in Autonomous Systems",
+    "link": "https://researcherslinks.com/journal/Advances-in-Animal-and-Veterinary-Sciences/33",
+    "authors": [
+      {
+        "name": "Alex C. Ethicist",
+        "affiliation": "Center for Ethics in Technology, University MNO"
+      },
+      {
+        "name": "Emily D. Engineer",
+        "affiliation": "School of Engineering, PQR University"
+      }
+    ],
+    "publicationDate": "2023-02-28",
+    "conference": {
+      "name": "International Conference on Ethics and Technology",
+      "location": "City, Country",
+      "date": "2023-06-15"
+    },
+    "keywords": ["ethics", "autonomous systems", "technology", "society"]
+  },
+  {
+    "title": "The Future of Human-Machine Collaboration",
+    "link": "https://researcherslinks.com/journal/hosts-and-viruses/6",
+    "authors": [
+      {
+        "name": "Michael Robo",
+        "affiliation": "Department of Robotics, University XYZ"
+      },
+      {
+        "name": "Olivia H. Interactionist",
+        "affiliation": "Human-Computer Interaction Lab, LMN Institute"
+      }
+    ],
+    "publicationDate": "2023-03-20",
+    "conference": {
+      "name": "International Symposium on Human-Machine Interaction",
+      "location": "City, Country",
+      "date": "2023-07-25"
+    },
+    "keywords": [
+      "human-machine collaboration",
+      "technology",
+      "society",
+      "future"
+    ]
+  },
+  {
+    "title": "Data Privacy in the Age of AI",
+    "link": "https://researcherslinks.com/journal/Journal-of-Animal-Health-and-Production/34",
+    "authors": [
+      {
+        "name": "Daniel Privacy",
+        "affiliation": "Privacy Research Institute, University ABC"
+      },
+      {
+        "name": "Sophia Secure",
+        "affiliation": "Cybersecurity Department, DEF College"
+      }
+    ],
+    "publicationDate": "2023-04-10",
+    "conference": {
+      "name": "International Privacy and Security Summit",
+      "location": "City, Country",
+      "date": "2023-08-30"
+    },
+    "keywords": [
+      "data privacy",
+      "artificial intelligence",
+      "security",
+      "society"
+    ]
+  },
+  {
+    "title": "Emerging Trends in AI Education",
+    "link": "https://researcherslinks.com/journal/Journal-of-Engineering-and-Applied-Sciences/31",
+    "authors": [
+      {
+        "name": "Ryan Educator",
+        "affiliation": "Department of Education Technology, University UVW"
+      },
+      {
+        "name": "Emma Learner",
+        "affiliation": "School of Lifelong Learning, GHI University"
+      }
+    ],
+    "publicationDate": "2023-05-15",
+    "conference": {
+      "name": "International Conference on AI in Education",
+      "location": "City, Country",
+      "date": "2023-09-18"
+    },
+    "keywords": ["AI education", "emerging trends", "technology", "society"]
+  },
+  {
+    "title": "https://researcherslinks.com/journal/Research-Journal-for-Veterinary-Practitioners/35",
+    "authors": [
+      {
+        "name": "Isabella Medic",
+        "affiliation": "Department of Medical AI, University PQR"
+      },
+      {
+        "name": "Nathan HealthTech",
+        "affiliation": "Healthcare Technology Lab, STU University"
+      }
+    ],
+    "publicationDate": "2023-07-10",
+    "conference": {
+      "name": "International Conference on AI in Healthcare",
+      "location": "City, Country",
+      "date": "2023-11-05"
+    },
+    "keywords": ["AI in healthcare", "technology", "society", "health"]
+  }
+]
