@@ -7,7 +7,7 @@ const CollegeDetails = () => {
   const [college, setCollege] = useState({});
 
   useEffect(() => {
-    fetch(`http://localhost:7000/college/${id}`)
+    fetch(`https://server-virid-nine.vercel.app/college/${id}`)
       .then((res) => res.json())
       .then((data) => setCollege(data));
   }, []);

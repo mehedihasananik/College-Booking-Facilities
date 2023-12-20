@@ -6,7 +6,7 @@ const Admission = () => {
   const [admission, setAdmission] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:7000/admissionColleges")
+    fetch("https://server-virid-nine.vercel.app/admissionColleges")
       .then((res) => res.json())
       .then((data) => setAdmission(data));
   }, []);

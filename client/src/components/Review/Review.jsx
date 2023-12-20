@@ -20,7 +20,7 @@ const Review = ({ item }) => {
       rating,
     };
     console.log(info);
-    fetch("http://localhost:7000/review", {
+    fetch("https://server-virid-nine.vercel.app/review", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

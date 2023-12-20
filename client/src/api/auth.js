@@ -5,7 +5,7 @@ export const saveUser = (user) => {
     email: user?.email
   }
 
-  fetch(`http://localhost:7000/users/${user?.email}`, {
+  fetch(`https://server-virid-nine.vercel.app/users/${user?.email}`, {
     method: "PUT",
     headers: { "content-type": "application/json" },
     body: JSON.stringify(currentUser),

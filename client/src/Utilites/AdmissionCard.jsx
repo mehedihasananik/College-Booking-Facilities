@@ -24,7 +24,7 @@ const AdmissionCard = ({ item }) => {
       phone,
     };
     console.log(info);
-    fetch("http://localhost:7000/admission", {
+    fetch("https://server-virid-nine.vercel.app/admission", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

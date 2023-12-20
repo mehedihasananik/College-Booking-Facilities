@@ -9,7 +9,7 @@ const MyCollege = () => {
   const [myColleges, setMyColleges] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:7000/admission/${user?.email}`)
+    fetch(`https://server-virid-nine.vercel.app/admission/${user?.email}`)
       .then((res) => res.json())
       .then((data) => setMyColleges(data));
   }, []);

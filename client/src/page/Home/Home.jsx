@@ -11,7 +11,7 @@ const Home = () => {
   const [filteredColleges, setFilteredColleges] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:7000/colleges")
+    fetch("https://server-virid-nine.vercel.app/colleges")
       .then((res) => res.json())
       .then((data) => {
         setColleges(data);
