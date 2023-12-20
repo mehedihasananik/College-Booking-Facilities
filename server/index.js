@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 require('dotenv').config()
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 7000
 
 // middleware
 const corsOptions = {
@@ -29,6 +29,8 @@ async function run() {
   try {
     const usersCollection = client.db('college').collection('users')
     const allColleges = client.db('college').collection('all-colleges')
+    const admissionColleges = client.db('college').collection('admissionColleges')
+    const admissionBooking = client.db('college').collection('admissionBooking')
 
 
     //  to get all the colleges
@@ -44,6 +46,35 @@ async function run() {
       const query = { _id: new ObjectId(id) };
       const user = await allColleges.findOne(query);
       res.send(user);
+    });
+
+    // admission colleges all 
+    app.get("/admissionColleges", async (req, res) => {
+      const data = admissionColleges.find();
+      const result = await data.toArray();
+      res.send(result);
+    });
+
+    // after admitting colleges
+    app.get("/admission", async (req, res) => {
+      const data = admissionBooking.find();
+      const result = await data.toArray();
+      res.send(result);
+    });
+
+    // create admisson post
+    app.post("/admission", async (req, res) => {
+      const data = req.body;
+      const query = { data };
+      console.log(query)
+      const exits = await admissionBooking.findOne(query);
+      if (exits) {
+        return res.send({ success: false, data: exits })
+      }
+
+      const result = await admissionBooking.insertOne(data);
+
+      res.send({ success: true, result });
     });
 
     // to save users email on database

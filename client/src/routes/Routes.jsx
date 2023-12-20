@@ -7,6 +7,9 @@ import RoomDetails from "../page/RoomDetails/RoomDetails";
 import CollegeDetails from "../components/Colleges/CollegeDetails";
 import ErrorPage from "../page/ErrorPage/ErrorPage";
 import MyColleges from "../page/MyColleges/MyColleges";
+import Admission from "../page/Admission/Admission";
+import PrivateRoute from "./PrivateRoute";
+import MyCollege from "../page/MyCollege/MyCollege";
 
 export const router = createBrowserRouter([
   {
@@ -19,6 +22,18 @@ export const router = createBrowserRouter([
       {
         path: "/colleges",
         element: <MyColleges />,
+      },
+      {
+        path: "/admission",
+        element: (
+          <PrivateRoute>
+            <Admission />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/myCollege",
+        element: <MyCollege />,
       },
       {
         path: "/login",

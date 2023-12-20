@@ -60,12 +60,7 @@
       "location": "City, Country",
       "date": "2023-07-25"
     },
-    "keywords": [
-      "human-machine collaboration",
-      "technology",
-      "society",
-      "future"
-    ]
+    "keywords": ["human-machine", "technology", "society", "future"]
   },
   {
     "title": "Data Privacy in the Age of AI",
@@ -115,7 +110,8 @@
     "keywords": ["AI education", "emerging trends", "technology", "society"]
   },
   {
-    "title": "https://researcherslinks.com/journal/Research-Journal-for-Veterinary-Practitioners/35",
+    "title": "AI and Healthcare: Bridging the Gap",
+    "link": "https://researcherslinks.com/journal/Research-Journal-for-Veterinary-Practitioners/35",
     "authors": [
       {
         "name": "Isabella Medic",

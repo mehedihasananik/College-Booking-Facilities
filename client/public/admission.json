@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Zeta University",
+    "research": "Economics",
+    "date": "2024-07-25",
+    "fees": "120",
+    "subjects": ["English", "Math", "Science", "History"]
+  },
+  {
+    "name": "Alpha University",
+    "research": "Computer Science",
+    "date": "2024-02-22",
+    "fees": "160",
+    "subjects": ["Literature", "Philosophy", "Geometry", "History"]
+  },
+  {
+    "name": "Beta College",
+    "research": "Chemistry",
+    "date": "2024-02-14",
+    "fees": "110",
+    "subjects": ["Philosophy", "Geometry", "Science", "History"]
+  },
+  {
+    "name": "Gamma Institute",
+    "research": "Physics",
+    "date": "2024-01-24",
+    "fees": "300",
+    "subjects": ["Science", "Math", "Philosophy", "History"]
+  },
+  {
+    "name": "Delta School",
+    "research": "Mathematics",
+    "date": "2024-04-2",
+    "fees": "330",
+    "subjects": ["Philosophy", "Math", "Literature", "History"]
+  },
+  {
+    "name": "Epsilon Academy",
+    "research": "Environmental Science",
+    "date": "2024-03-25",
+    "fees": "420",
+    "subjects": ["Literature", "Math", "Philosophy", "History"]
+  }
+]

@@ -12,10 +12,10 @@ const Search = () => {
           <Link to="colleges">Colleges</Link>
         </div>
         <div className="text-[16px] font-bold px-6 ">
-          <Link>Admission</Link>
+          <Link to="/admission">Admission</Link>
         </div>
         <div className="text-[16px] font-bold px-6 ">
-          <Link>My College</Link>
+          <Link to="/myCollege">My College</Link>
         </div>
       </div>
     </div>

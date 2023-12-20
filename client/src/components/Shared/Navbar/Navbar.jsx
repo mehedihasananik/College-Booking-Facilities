@@ -56,7 +56,7 @@ const Navbar = () => {
                   <Link to="colleges">Colleges</Link>
                 </div>
                 <div className="tex-center hover:bg-gray-200">
-                  <Link>Admission</Link>
+                  <Link to="/admission">Admission</Link>
                 </div>
                 <div className="tex-center hover:bg-gray-200">
                   <Link>My College</Link>
