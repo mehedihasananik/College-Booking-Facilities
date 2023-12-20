@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "daisyui": "^4.4.20"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2"
   }
 }

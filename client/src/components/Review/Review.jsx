@@ -9,11 +9,13 @@ const Review = ({ item }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const date = e.target.date.value;
+    const name = e.target.name.value;
     const description = e.target.description.value;
     const rating = e.target.rating.value;
 
     const info = {
       date,
+      name,
       description,
       rating,
     };
@@ -75,7 +77,18 @@ const Review = ({ item }) => {
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">description</span>
+                    <span className="label-text">Your Name</span>
+                  </label>
+                  <input
+                    name="name"
+                    type="text"
+                    className="input input-bordered"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Description</span>
                   </label>
                   <input
                     name="description"

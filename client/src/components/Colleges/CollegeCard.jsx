@@ -43,14 +43,14 @@ const CollegeCard = ({ college }) => {
         </div>
         <div className="font-light flex gap-x-2">
           <span className="font-semibold"> Events:</span>
-          {events.slice(0, 2).map((item) => {
-            return <p> {item}</p>;
+          {events.slice(0, 2).map((item, index) => {
+            return <p key={index}> {item}</p>;
           })}
         </div>
         <div className="font-light flex gap-x-2">
           <span className="font-semibold"> Sports:</span>
-          {sports.slice(0, 2).map((item) => {
-            return <p>{item}</p>;
+          {sports.slice(0, 2).map((item, index) => {
+            return <p key={index}>{item}</p>;
           })}
         </div>
         <div className="text-left pt-5">

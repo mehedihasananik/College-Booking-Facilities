@@ -3,6 +3,7 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 require('dotenv').config()
+var jwt = require('jsonwebtoken');
 const port = process.env.PORT || 7000
 
 // middleware
@@ -24,6 +25,23 @@ const client = new MongoClient(uri, {
     deprecationErrors: true,
   },
 })
+
+const verifyJWT = (req, res, next) => {
+  const authorization = req.headers.authorization;
+  if (!authorization) {
+    return res.status(401).send({ error: true, message: "unauthorize access" })
+  }
+  const token = authorization.split(" ")[1];
+
+  jwt.verify(token, process.env.ACCESS_TOKEN, function (err, decoded) {
+    if (err) {
+      return res.status(403).send({ error: true, message: "unauthorize access" })
+    }
+    req.decoded = decoded
+    next()
+  });
+}
+
 
 async function run() {
   try {
@@ -57,11 +75,20 @@ async function run() {
     });
 
     // after admitting colleges
-    app.get("/admission", async (req, res) => {
-      const data = admissionBooking.find();
-      const result = await data.toArray();
-      res.send(result);
-    });
+    // app.get("/admission", async (req, res) => {
+    //   const data = admissionBooking.find();
+    //   const result = await data.toArray();
+    //   res.send(result);
+    // });
+    app.get('/admission/:email', async (req, res) => {
+      const email = req.params.email
+      const query = { user_email: email }
+      const result = await admissionBooking.find(query).toArray()
+      res.send(result)
+    })
+
+
+
 
     // create admisson post
     app.post("/admission", async (req, res) => {
@@ -100,7 +127,12 @@ async function run() {
       console.log(result)
       res.send(result)
     })
-
+    // get reviews
+    app.get("/review", async (req, res) => {
+      const data = reviews.find();
+      const result = await data.toArray();
+      res.send(result);
+    });
     // review
     app.post("/review", async (req, res) => {
       const data = req.body;

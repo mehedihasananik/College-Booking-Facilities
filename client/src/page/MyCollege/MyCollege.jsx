@@ -1,12 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Container from "../../components/Shared/Navbar/Container/Container";
 import MyClgCard from "../../Utilites/MyClgCard";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const MyCollege = () => {
+  const { user } = useContext(AuthContext);
+  console.log(user?.email);
   const [myColleges, setMyColleges] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:7000/admission")
+    fetch(`http://localhost:7000/admission/${user?.email}`)
       .then((res) => res.json())
       .then((data) => setMyColleges(data));
   }, []);

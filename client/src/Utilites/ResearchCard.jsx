@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ResearchCard = ({ item }) => {
-  console.log(item);
   const { title, link, publicationDate, keywords, conference, authors } = item;
   return (
     <div className="card w-full bg-base-100 shadow-xl">
