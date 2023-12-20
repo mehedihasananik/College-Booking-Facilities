@@ -4,7 +4,7 @@ const app = express()
 const cors = require('cors')
 require('dotenv').config()
 var jwt = require('jsonwebtoken');
-const port = process.env.PORT || 7000
+const port = process.env.PORT || 5000
 
 // middleware
 const corsOptions = {
@@ -75,20 +75,24 @@ async function run() {
     });
 
     // after admitting colleges
-    // app.get("/admission", async (req, res) => {
-    //   const data = admissionBooking.find();
-    //   const result = await data.toArray();
-    //   res.send(result);
-    // });
+    app.get("/admission", async (req, res) => {
+      const data = admissionBooking.find();
+      const result = await data.toArray();
+      res.send(result);
+    });
+    app.get("/admissions/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: new ObjectId(id) };
+      const user = await admissionBooking.findOne(query);
+      res.send(user);
+    });
+
     app.get('/admission/:email', async (req, res) => {
       const email = req.params.email
       const query = { user_email: email }
       const result = await admissionBooking.find(query).toArray()
       res.send(result)
     })
-
-
-
 
     // create admisson post
     app.post("/admission", async (req, res) => {
@@ -106,12 +110,7 @@ async function run() {
     });
 
     // get admisson clg details by id
-    app.get("/admission/:id", async (req, res) => {
-      const id = req.params.id;
-      const query = { _id: new ObjectId(id) };
-      const user = await admissionBooking.findOne(query);
-      res.send(user);
-    });
+
 
     // to save users email on database
 
