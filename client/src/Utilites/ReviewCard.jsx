@@ -10,7 +10,7 @@ const ReviewCard = ({ review }) => {
     </span>
   ));
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
+    <div className="card w-full md:w-96 bg-base-100 shadow-xl">
       <div className="card-body">
         <div className="flex gap-4">
           <div className="avatar flex gap-3 items-center">

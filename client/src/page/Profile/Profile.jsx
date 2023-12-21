@@ -5,6 +5,7 @@ import { saveUser } from "../../api/auth";
 import toast from "react-hot-toast";
 import InfoProfile from "./InfoProfile";
 import Loader from "../../components/Loader/Loader";
+import Title from "../../components/Title/Title";
 
 const Profile = () => {
   const { user, updateUserProfile, loading } = useContext(AuthContext);
@@ -60,13 +61,14 @@ const Profile = () => {
 
   return (
     <Container>
-      <div className="hero ">
-        <div className="hero-content flex-col lg:flex-row">
+      <Title title="Profile" />
+      <div className="hero md:py-5 ">
+        <div className="hero-content flex-col lg:flex-row gap-10 ">
           <div>
             <img src={user?.photoURL} className="w-96 rounded-lg shadow-2xl" />
           </div>
           <div>
-            <InfoProfile user={user} loading={loading} />
+            <InfoProfile />
             <button
               onClick={() => modalRef.current.showModal()}
               className="btn btn-primary"

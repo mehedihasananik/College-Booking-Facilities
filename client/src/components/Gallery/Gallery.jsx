@@ -13,7 +13,7 @@ const Gallery = () => {
   return (
     <Container>
       <div>
-        <div className="flex justify-center text-4xl pt-5 relative">
+        <div className="flex justify-center text-2xl pb-10 md:pb-0 md:text-4xl md:pt-5 relative">
           <p className="inline-block relative">
             Graduation Gallery
             <span className="absolute bottom-[-5px] left-0 right-0 h-1 gradient-container"></span>

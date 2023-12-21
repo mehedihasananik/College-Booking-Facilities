@@ -24,18 +24,18 @@ const InfoProfile = () => {
       {" "}
       <h1 className="text-5xl font-bold">{user?.displayName}</h1>
       <p className="py-1 ">
-        <span className="font-bold pr-2">Email:</span> {user?.email}
+        <span className="font-bold pr-1">Email:</span> {user?.email}
       </p>
       {address && university ? (
         <div>
           <p className="py-1 ">
             {" "}
-            <span className="font-bold pr-2">Address:</span>
+            <span className="font-bold pr-1">Address:</span>
             {address}{" "}
           </p>
           <p className="py-1 ">
             {" "}
-            <span className="font-bold pr-2">University:</span>
+            <span className="font-bold pr-1">University:</span>
             {university}{" "}
           </p>
         </div>

@@ -7,7 +7,7 @@ const ResearchCard = ({ item }) => {
     <div className="card w-full bg-base-100 shadow-xl">
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
-        <div className="flex items-center space-x-1">
+        <div className="  space-x-1">
           <span className="text-md font-bold">KeyWords:</span>
           {keywords?.map((item, index) => {
             return (
@@ -18,7 +18,7 @@ const ResearchCard = ({ item }) => {
             );
           })}
         </div>
-        <div className="flex  space-x-1">
+        <div className=" space-x-1">
           <span className="text-md font-bold">Researched By:</span>
           {authors?.map((item, index) => {
             return (
