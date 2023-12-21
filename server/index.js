@@ -94,8 +94,14 @@ async function run() {
       res.send({ success: true, result });
     });
 
-    // get admisson clg details by id
+    // get users
 
+    app.get('/users/:email', async (req, res) => {
+      const email = req.params.email
+      const query = { email: email }
+      const result = await usersCollection.find(query).toArray()
+      res.send(result)
+    })
 
     // to save users email on database
 

@@ -1,15 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Container from "../Shared/Navbar/Container/Container";
 import CollegeCard from "./CollegeCard";
+import { AuthContext } from "../../providers/AuthProvider";
+import Loader from "../Loader/Loader";
 
 const Colleges = ({ filteredColleges }) => {
   const [colleges, setColleges] = useState([]);
+  const { loading } = useContext(AuthContext);
 
   useEffect(() => {
     fetch("https://server-virid-nine.vercel.app/colleges")
       .then((res) => res.json())
       .then((data) => setColleges(data));
   }, []);
+  if (loading) {
+    return <Loader />;
+  }
 
   return (
     <Container>

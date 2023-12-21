@@ -60,7 +60,7 @@ const MenuDropdown = () => {
                     Login
                   </Link>
                   <Link
-                    to="/profile"
+                    to="/signup"
                     className="px-4 py-3 hover:bg-neutral-100 transition font-semibold"
                   >
                     Sign Up
