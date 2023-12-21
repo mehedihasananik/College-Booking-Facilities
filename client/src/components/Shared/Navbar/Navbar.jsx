@@ -59,7 +59,7 @@ const Navbar = () => {
                   <Link to="/admission">Admission</Link>
                 </div>
                 <div className="tex-center hover:bg-gray-200">
-                  <Link>My College</Link>
+                  <Link to="/myCollege">My College</Link>
                 </div>
               </ul>
             </div>

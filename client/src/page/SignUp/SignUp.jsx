@@ -5,6 +5,7 @@ import { AuthContext } from "../../providers/AuthProvider";
 import { ImSpinner3 } from "react-icons/im";
 import toast from "react-hot-toast";
 import { saveUser } from "../../api/auth";
+import { FaGithub } from "react-icons/fa";
 
 const SignUp = () => {
   const {
@@ -15,14 +16,28 @@ const SignUp = () => {
     signInWithGoogle,
     resetPassword,
     updateUserProfile,
+    signInWithGit,
   } = useContext(AuthContext);
 
   let navigate = useNavigate();
   let location = useLocation();
-  let from = location.state?.form?.pathname || "/";
+  let from = location.state?.from?.pathname || "/";
 
   const handleGoogleSignIn = () => {
     signInWithGoogle()
+      .then((result) => {
+        const user = result.user;
+        saveUser(user);
+        navigate(from, { replace: true });
+        console.log(user);
+      })
+      .catch((error) => {
+        setLoading(false);
+        console.log(error.message);
+      });
+  };
+  const handleGitSignIn = () => {
+    signInWithGit()
       .then((result) => {
         const user = result.user;
         saveUser(user);
@@ -175,6 +190,14 @@ const SignUp = () => {
           <FcGoogle size={32} />
 
           <p>Continue with Google</p>
+        </div>
+        <div
+          onClick={handleGitSignIn}
+          className="flex justify-center items-center space-x-2 border m-3 p-2 border-gray-300 border-rounded cursor-pointer"
+        >
+          <FaGithub size={32} />
+
+          <p>Continue with GiT</p>
         </div>
         <p className="px-6 text-sm text-center text-gray-400">
           Already have an account?{" "}
