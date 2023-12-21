@@ -19,7 +19,7 @@ const Review = ({ item }) => {
       description,
       rating,
     };
-    console.log(info);
+
     fetch("https://server-virid-nine.vercel.app/review", {
       method: "POST",
       headers: {
@@ -29,7 +29,6 @@ const Review = ({ item }) => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         if (data.success === true) {
           toast.success(`You have successfully added a rating`);
         } else {

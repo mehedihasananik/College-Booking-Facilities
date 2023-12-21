@@ -3,7 +3,6 @@ import { BsStarFill, BsStarHalf, BsStar } from "react-icons/bs";
 
 const ReviewCard = ({ review }) => {
   const { date, name, description, rating: stars } = review;
-  console.log(stars);
 
   const tempStars = Array.from({ length: 5 }, (_, index) => (
     <span className="text-yellow-500" key={index}>

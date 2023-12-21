@@ -4,6 +4,7 @@ import { AuthContext } from "../../providers/AuthProvider";
 import { saveUser } from "../../api/auth";
 import toast from "react-hot-toast";
 import InfoProfile from "./InfoProfile";
+import Loader from "../../components/Loader/Loader";
 
 const Profile = () => {
   const { user, updateUserProfile, loading } = useContext(AuthContext);
@@ -53,6 +54,9 @@ const Profile = () => {
     }
     modalRef.current.close();
   };
+  if (loading) {
+    return <Loader />;
+  }
 
   return (
     <Container>

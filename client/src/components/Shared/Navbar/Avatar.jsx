@@ -4,11 +4,12 @@ import { AuthContext } from "../../../providers/AuthProvider";
 
 const Avatar = () => {
   const { user } = useContext(AuthContext);
+  console.log(user?.photoURL);
 
   return (
     <img
       className="rounded-full"
-      src={user && user.photoURL ? user.photoURL : avatarImg}
+      src={user && user.photoURL ? user?.photoURL : avatarImg}
       alt="profile"
       height="30"
       width="30"
