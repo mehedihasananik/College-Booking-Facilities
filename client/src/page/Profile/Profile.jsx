@@ -73,7 +73,7 @@ const Profile = () => {
               onClick={() => modalRef.current.showModal()}
               className="btn btn-primary"
             >
-              Edit Profile
+              Update Profile
             </button>
           </div>
         </div>

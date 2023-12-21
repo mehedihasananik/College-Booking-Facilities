@@ -53,9 +53,9 @@ const AdmissionCard = ({ item }) => {
         <div className="w-full py-3">
           <button
             onClick={() => modalRef.current.showModal()}
-            className="px-4 info_card text-black bg-red-500 font-semibold py-3"
+            className="px-4 info_card text-white bg-red-500 font-semibold py-3 rounded-md"
           >
-            Book Appointment
+            Admission Form
           </button>
         </div>
         <div>
@@ -124,6 +124,28 @@ const AdmissionCard = ({ item }) => {
                     className="input input-bordered"
                     required
                     defaultValue={user?.displayName}
+                  />
+                </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Add Image</span>
+                  </label>
+                  <input
+                    name="image"
+                    type="text"
+                    placeholder="Image"
+                    className="input input-bordered"
+                  />
+                </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Date Of Birth</span>
+                  </label>
+                  <input
+                    name="date"
+                    type="date"
+                    placeholder="Enter Your Birth Date"
+                    className="input input-bordered"
                   />
                 </div>
                 <div className="form-control">

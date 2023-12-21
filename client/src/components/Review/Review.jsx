@@ -48,7 +48,7 @@ const Review = ({ item }) => {
         <div className="w-full py-3">
           <button
             onClick={() => modalRef.current.showModal()}
-            className="px-4 info_card text-black bg-red-500 font-semibold py-3"
+            className="px-4 info_card text-white bg-red-500 font-semibold py-2 rounded-md"
           >
             Review
           </button>

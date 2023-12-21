@@ -20,7 +20,7 @@ const CollegeDetails = () => {
         <div className="w-full h-100">
           <img className="w-[100%] md:h-[600px]" src={image} alt="Room" />
         </div>
-        <div className="font-semibold text-2xl tex-center">
+        <div className="font-semibold text-2xl tex-center pt-4">
           <p>{name}</p>
         </div>
         <div className="font-light text-neutral-500">
@@ -38,16 +38,19 @@ const CollegeDetails = () => {
             {research}
           </div>
         </div>
-        <div className="font-light flex gap-x-2">
-          <span className="text-lg font-bold text-neutral-500"> Events:</span>
+        <div className="font-light flex items-center  gap-x-2 ">
+          <span className="md:text-lg font-bold text-neutral-500">
+            {" "}
+            Events:
+          </span>
           {events?.map((item) => {
-            return <p className="text-lg font-medium"> {item},</p>;
+            return <p className="text-sm font-bold md:text-lg "> {item},</p>;
           })}
         </div>
-        <div className="font-light flex gap-x-2">
+        <div className="font-light flex items-center gap-x-2">
           <span className="text-lg font-bold text-neutral-500"> Sports:</span>
           {sports?.map((item) => {
-            return <p className="text-lg font-medium">{item},</p>;
+            return <p className="text-sm font-bold md:text-lg ">{item},</p>;
           })}
         </div>
         <div className="text-left pt-5"></div>

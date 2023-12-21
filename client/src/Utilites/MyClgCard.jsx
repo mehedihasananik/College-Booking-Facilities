@@ -28,7 +28,7 @@ const MyClgCard = ({ college, index }) => {
       <td>
         <Link
           to={`/myCollegeDetails/${_id}`}
-          className="bg-[#FF385C] text-white  px-5 py-2 rounded-md"
+          className="bg-red-500 font-bold text-white  px-5 py-2 rounded-md"
         >
           Details
         </Link>

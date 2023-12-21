@@ -16,7 +16,7 @@ const MyCollegeDetails = () => {
   const { collegeName, date, phone, subject, user_email, user_name } = college;
   return (
     <Container>
-      <div className="flex flex-col justify-center items-center gap-2">
+      <div className="flex flex-col justify-center items-center gap-2 py-10">
         <div className="font-semibold text-2xl tex-center">
           <p>{collegeName}</p>
         </div>
@@ -27,19 +27,21 @@ const MyCollegeDetails = () => {
           </span>{" "}
           {date}
         </div>
-        <div className="flex flex-row items-center gap-1">
+        <div className="flex flex-col md:flex-row items-center gap-1">
           <div className="font-semibold">
-            <span className="text-lg font-bold text-neutral-500">Subject:</span>{" "}
+            <span className="text-md md:text-lg font-bold text-neutral-500">
+              Subject:
+            </span>{" "}
             {subject}
           </div>
           <div className="font-semibold">
-            <span className="text-lg font-bold text-neutral-500">
+            <span className="text-md md:text-lg font-bold text-neutral-500">
               Phone Number:
             </span>{" "}
             {phone}
           </div>
           <div className="font-semibold">
-            <span className="text-lg font-bold text-neutral-500">
+            <span className="text-md md:text-lg font-bold text-neutral-500 no">
               Student Email:
             </span>{" "}
             {user_email}

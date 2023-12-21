@@ -15,15 +15,15 @@ const ReviewCard = ({ review }) => {
         <div className="flex gap-4">
           <div className="avatar flex gap-3 items-center">
             <div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-              <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+              <img src="https://i.pinimg.com/originals/55/0f/49/550f49a459548599a5a4ea1c67fc0244.jpg" />
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center">
-            <div className="flex flex-row ">
+          <div className="flex flex-col ">
+            <div className="flex flex-row justify-center items-center ">
               <div className="px-10">{name}</div>
               {tempStars}
             </div>
-            <div>{date}</div>
+            <div className="px-10">{date}</div>
           </div>
         </div>{" "}
         {/* <h2 className="card-title">Card title!</h2> */}
